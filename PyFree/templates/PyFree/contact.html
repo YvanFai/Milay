@@ -1,0 +1,83 @@
+{% extends 'PyFree/base.html' %}
+
+
+{% block content  %}
+    
+<section class = "contact">
+    <div class="content">
+        <h2>Contact </h2>
+        <p>Besoin d'une expertise de pointe pour accompagner votre entreprise ? Contactez-nous dès maintenant ! Nos experts se feront un plaisir de discuter de vos projets digitaux.</p>
+    </div>
+
+    <div class="container">
+        <div class="contactInfo">
+            <div class="box" >
+                <div class="icon"><b></b><ion-icon name="location-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Adresse</h3>
+                    <p>ID 01 Cité Henri Amponenana Fianarantsoa</p>
+                </div>
+            </div>
+
+            <div class="box" >
+                <div class="icon"><b></b><ion-icon name="call-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Téléphone</h3>
+                    <p>+261 34 69 587 85</p>
+                </div>
+            </div>
+
+            <div class="box" >
+                <div class="icon"><b></b><ion-icon name="mail-unread-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>E-mail</h3>
+                    <p>kylefaideau@gmail.com</p>
+                </div>
+            </div>
+
+            <h3 class="txt">Se connecter avec nous</h3>
+            <ul class="social">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>
+
+        </div>
+        <div class="contactForm">
+            <form>
+                
+                <h2>Écrivez-nous</h2>
+                <div class="inputBox">
+                    <input type="text" name="" required = "required">
+                    <span>Nom</span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="" required = "required">
+                    <span>Adresse email</span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="" required = "required">
+                    <span>Téléphone</span>
+                </div>
+
+                <div class="inputBox">
+                    <textarea required = "required"></textarea>
+                    <span>Votre message...</span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+
+
+{% endblock%}
+    

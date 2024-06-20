@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.yes{
+    height: 75%;
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 10%;
+}
+
+.hero-text h1{
+    font-size: 65px;
+    font-weight: 500;
+    color: gray;
+}
+
+.hero-text p{
+    font-size: 17px;
+    color: gray;
+    line-height: 1.9;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.hero-img img{
+    width: 800px;
+    height: auto;
+}
+
+.hero-text a{
+    display: inline-block;
+    background-color: rgb(66, 192, 144);
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 12px 30px;
+    color: black;
+    font-size: 0.8em;
+    margin-left: 18px;
+    transition: all .55s ease;
+}
+
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid rgb(66, 192, 144);
+    transform: translateX(8px);
+}
+
+.hero-text .test{
+    background-color: gray;
+}
+
+.hero-text a ion-icon{
+    vertical-align: middle;
+    margin-right: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
