@@ -1,4 +1,4 @@
-{% load static %}
+{% load static  %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="{% static 'global.css' %}">
     <link rel="stylesheet" href="{% static 'PyFree/css/main.css' %}">
     <link rel="stylesheet" href="{% static 'PyFree/css/home.css' %}">
-    <!-- Ajout des fichiers CSS de React -->
-    <link rel="stylesheet" href="{% static 'path/to/react-build.css' %}">
 </head>
 <body>
-    
-    <div class="hero">
+
+    <div class = "hero">
         <nav>
-            <h2 class="logo">Py<span>Free</span></h2>
+            <h2 class = "logo">Py<span>Free</span> </h2>
             <ul>
                 <li><a href="{% url 'home' %}">Acceuil</a></li>
                 <li><a href="#">À propos</a></li>
@@ -27,12 +25,11 @@
             <button type="button">Nous soutenir</button>
         </nav>
     </div>
-    
+
     {% block content %}
-        <!-- Point d'ancrage pour l'application React -->
-        <div id="react-root"></div>
+
     {% endblock %}
-    
+
     <footer>
         <div class="waves">
             <div class="wave" id="wave1"></div>
@@ -40,7 +37,9 @@
             <div class="wave" id="wave3"></div>
             <div class="wave" id="wave4"></div>
         </div>
-        <ul class="social_icon">
+
+
+        <ul class = "social_icon">
             <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
             <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
             <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
@@ -52,15 +51,17 @@
             <li><a href="#">Portfolio</a></li>
             <li><a href="{% url 'contact' %}">Nous contacter</a></li>
         </ul>
+
         <p>Tout droits réservés , développé par PyFree</p>
+
     </footer>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="{% static 'PyFree/Js/script.js' %}"></script>
 
-    <!-- Ajout du script JavaScript de React -->
-    <script src="{% static 'path/to/react-build.js' %}"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="{% static 'PyFree/Js/script.js' %}"></script>
+
+
 </body>
 </html>
